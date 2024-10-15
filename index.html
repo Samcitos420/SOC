@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BeFitShop - Tvoja cesta ku kondícii začína tu</title>
+    <!-- Prepojenie na externý CSS súbor -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts pre Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Nastavenie predvoleného tmavého režimu pri načítaní */
+        body {
+            display: none; /* Skrytie tela stránky, aby sme predišli prebliknutiu */
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (localStorage.getItem('theme') === 'dark') {
+                document.body.classList.add('dark-mode');
+            }
+            document.body.style.display = 'block'; // Zobrazíme telo stránky po overení režimu
+        });
+    </script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>BeFitShop</h1>
+        </div>
+        <nav>
+            <a href="#home">Domov</a>
+            <a href="#products">Produkty</a>
+            <a href="#about">O nás</a>
+            <a href="#contact">Kontakt</a>
+            <button id="theme-toggle" class="theme-toggle">🌙</button>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Buď fit, zostaň zdravý</h1>
+            <p>Široký výber fitness vybavenia, tréningového oblečenia a doplnkov pre tvoje zdravie.</p>
+            <a href="fitness-pomocky.html" class="cta-button">Preskúmať produkty</a>
+        </div>
+    </section>
+
+    <div class="container">
+        <h2>Naše najlepšie fitness produkty</h2>
+        <section class="products-section">
+            <div class="product-card">
+                <img src="fitness-equipment.jpg" alt="Fitness pomôcky">
+                <h3>Fitness pomôcky</h3>
+                <p>Špičkové vybavenie pre každý tréning.</p>
+                <a href="fitness-pomocky.html" class="cta-button-small">Zobraziť viac</a>
+            </div>
+            <div class="product-card">
+                <img src="training-clothes.jpg" alt="Tréningové oblečenie">
+                <h3>Tréningové oblečenie</h3>
+                <p>Pohodlné a štýlové športové oblečenie.</p>
+                <a href="treningove-oblecenie.html" class="cta-button-small">Zobraziť viac</a>
+            </div>
+            <div class="product-card">
+                <img src="supplements.jpg" alt="Výživové doplnky">
+                <h3>Výživové doplnky</h3>
+                <p>Zvýšte svoj výkon s našimi doplnkami.</p>
+                <a href="vyzivove-doplnky.html" class="cta-button-small">Zobraziť viac</a>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 BeFitShop - Všetky práva vyhradené</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

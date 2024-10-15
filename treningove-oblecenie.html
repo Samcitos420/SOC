@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tréningové Oblečenie - BeFitShop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Nastavenie predvoleného tmavého režimu pri načítaní */
+        body {
+            display: none; /* Skrytie tela stránky, aby sme predišli prebliknutiu */
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (localStorage.getItem('theme') === 'dark') {
+                document.body.classList.add('dark-mode');
+            }
+            document.body.style.display = 'block'; // Zobrazíme telo stránky po overení režimu
+        });
+    </script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>BeFitShop</h1>
+        </div>
+        <nav>
+            <a href="index.html">Domov</a>
+            <a href="#products">Produkty</a>
+            <a href="#about">O nás</a>
+            <a href="#contact">Kontakt</a>
+            <button id="theme-toggle" class="theme-toggle">🌙</button>
+        </nav>
+    </header>
+
+    <section class="hero-small">
+        <div class="hero-content">
+            <h1>Tréningové Oblečenie</h1>
+            <p>Pohodlné a štýlové oblečenie pre každý tréning.</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <h2>Štýlové tréningové oblečenie</h2>
+        <p>Objav našu ponuku tréningového oblečenia navrhnutého pre komfort a výkon.</p>
+
+        <!-- Pridaj ďalšie sekcie alebo produkty, keď budú k dispozícii -->
+    </div>
+
+    <footer>
+        <p>&copy; 2024 BeFitShop - Všetky práva vyhradené</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
